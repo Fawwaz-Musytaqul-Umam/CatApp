@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+}
+
+h1,
+h2 {
+    color: #071C21;
+}
+
+a {
+    text-decoration: none;
+}
+
+body>header {
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #97db7b;
+    border-bottom: 3px solid #28DF99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+nav {
+    height: 90px;
+    padding: 10px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    height: 80%;
+}
+
+.button {
+    padding: 12px 45px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #153B44;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #0b5161;
+}
+
+main {
+    padding: 40px;
+    overflow: auto;
+}
+
+#content {
+    width: 73%;
+    float: left;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+    float: right;
+    border-top: 1px solid #071C21;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+}
+
+aside header {
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+}
+
+aside section {
+    text-align: center;
+}
+
+footer {
+    box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #28df7a;
+    background-color: #8dd371;
+    color: #414141;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+        padding: 9px 39px;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    #content {
+        width: 65%;
+        padding-right: 50px;
+    }
+
+    aside {
+        width: 35%;
+    }
+
+    .profile-image {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #content {
+        width: 61%;
+        padding-right: 50px;
+    }
+
+    aside {
+        width: 39%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    header nav {
+        padding: 5px 20px;
+    }
+
+    nav .logo {
+        height: 50%;
+    }
+
+    aside {
+        width: 95%;
+        margin: 20vh auto 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        float: none;
+        padding-block: 35px;
+        background-color: #e9e9e980;
+    }
+}
