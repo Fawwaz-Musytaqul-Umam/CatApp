@@ -1,0 +1,166 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff3db;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    color: #fff9ef;
+    position: sticky;
+    background-color: #97db7b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#content {
+    width: 74%;
+    padding: 40px;
+}
+
+.note-header,
+.note-text {
+    width: 100%;
+    margin-bottom: 2vh;
+    padding: 24px;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+    background-color: #fffbf3;
+}
+
+.note-header {
+    height: 13vh;
+    font-weight: bold;
+}
+
+.note-text {
+    height: 55vh;
+}
+
+.save-button {
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: #75d34f;
+}
+
+.save-button:hover {
+    background-color: #5dbe37;
+}
+
+aside {
+    height: 100vh;
+    width: 26%;
+    text-align: center;
+    overflow: auto;
+    padding: 40px 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .5);
+}
+
+.saved-note {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 18px;
+    font-weight: 550;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #fde8bd;
+}
+
+.saved-note:hover {
+    background-color: #f5dca9;
+}
+
+footer {
+    padding: 15px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff9ef;
+    position: sticky;
+    background-color: #85d168;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 69%;
+    }
+
+    aside {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    header {
+        font-size: 3.3vw;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    .save-button {
+        width: 100%;
+    }
+
+    aside {
+        height: 60vh;
+        margin: 25px 0;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: none;
+    }
+}
