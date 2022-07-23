@@ -99,17 +99,27 @@ aside {
 
 .saved-note {
     width: 100%;
-    padding: 25px;
-    margin-bottom: 18px;
+    padding: 35px 25px;
+    margin-bottom: 23px;
     font-weight: 550;
-    display: inline-block;
     cursor: pointer;
+    overflow-wrap: break-word;
     border-radius: 8px;
     background-color: #fde8bd;
 }
 
 .saved-note:hover {
     background-color: #f5dca9;
+}
+
+.delete-all-notes {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 95, 95);
 }
 
 footer {
@@ -132,7 +142,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 810px) {
     header {
         font-size: 3.3vw;
     }
